@@ -1,0 +1,17 @@
+---
+
+puppet_enterprise::profile::master::code_manager_auto_configure: true
+puppet_enterprise::master::code_manager::git_settings:
+  private-key: /etc/puppetlabs/puppetserver/ssh/id-control_repo.rsa
+  repositories:
+    - remote: "git@gitlab.classroom.puppet.com:puppet/control-repo.git"
+      private-key: git@gitlab.classroom.puppet.com:puppet/control-repo.git"
+    - remote: "git@github.com:nelsong27/otherrepo.git"
+      private-key: "/id-control_repo.rsa"
+puppet_enterprise::master::code_manager::sources:
+    repo1:
+      remote: "git@gitlab.classroom.puppet.com:puppet/control-repo.git"
+      prefix: false
+    repo2:
+      remote: "git@github.com:nelsong27/otherrepo.git"
+      prefix: false
