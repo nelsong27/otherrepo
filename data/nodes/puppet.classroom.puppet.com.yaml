@@ -14,4 +14,4 @@ puppet_enterprise::master::code_manager::sources:
       prefix: false
     repo2:
       remote: "git@github.com:nelsong27/otherrepo.git"
-      prefix: false
+      prefix: true
