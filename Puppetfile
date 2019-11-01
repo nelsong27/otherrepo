@@ -17,4 +17,4 @@ forge 'https://forge.puppet.com'
 #  branch: 'docs_experiment'
 mod 'users2',
   git: 'https://github.com/nelsong27/users2.git',
-  commit: 'ee639bd'
+  commit: '61df4e0'
