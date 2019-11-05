@@ -1,14 +1,5 @@
 forge 'https://forge.puppet.com'
 
-def default_branch(default)
-  begin
-    match = /(.+)_(cdpe|cdpe_ia)_\d+$/.match(@librarian.environment.name)
-    match ? match[1]:default
-  rescue
-    default
-  end
-end
-
 # Modules from the Puppet Forge
 # Versions should be updated to be the latest at the time you start
 #mod 'puppetlabs/inifile', '3.0.0'
@@ -25,6 +16,7 @@ end
 #  git:    'https://github.com/puppetlabs/puppetlabs-apache',
 #  branch: 'docs_experiment'
 mod 'users2',
-  :git    => 'https://github.com/nelsong27/users2.git',
-  :branch => :control_branch
+  :git => 'https://github.com/nelsong27/users2.git',
+  :branch => :control_branch,
+  :default_branch => :'master'
 #  commit: '61df4e0'
