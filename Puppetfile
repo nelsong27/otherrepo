@@ -25,6 +25,6 @@ end
 #  git:    'https://github.com/puppetlabs/puppetlabs-apache',
 #  branch: 'docs_experiment'
 mod 'users2',
-  git: 'https://github.com/nelsong27/users2.git',
-  branch: => :control_branch
+  :git    => 'https://github.com/nelsong27/users2.git',
+  :branch => :control_branch
 #  commit: '61df4e0'
