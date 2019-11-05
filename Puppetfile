@@ -26,4 +26,5 @@ end
 #  branch: 'docs_experiment'
 mod 'users2',
   git: 'https://github.com/nelsong27/users2.git',
-  commit: '61df4e0'
+  branch: => :control_branch
+#  commit: '61df4e0'
