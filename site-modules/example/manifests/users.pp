@@ -10,6 +10,6 @@ class example::users {
     home               => '/home',
     password           => '*',
     shell              => '/bin/bash',
-    password_max_age   => 55,
+    password_max_age   => 30,
   }
 }
